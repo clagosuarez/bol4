@@ -61,7 +61,7 @@ public class Conta {
 //  Transferencia  
    public void transferencia(Conta destino, double cantidad){
        saldo -= Math.abs(cantidad);
-       destino.setSaldo(destino.getSaldo() - cantidad);
+       destino.setSaldo(destino.getSaldo() + cantidad);
    }
 }
 
